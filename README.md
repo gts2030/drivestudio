@@ -108,6 +108,8 @@ cd drivestudio
 conda create -n drivestudio python=3.9 -y
 conda activate drivestudio
 pip install -r requirements.txt
+pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
+pip install -v -U git+https://github.com/facebookresearch/xformers.git@main#egg=xformers
 pip install git+https://github.com/nerfstudio-project/gsplat.git@v1.3.0
 pip install git+https://github.com/facebookresearch/pytorch3d.git
 pip install git+https://github.com/NVlabs/nvdiffrast
